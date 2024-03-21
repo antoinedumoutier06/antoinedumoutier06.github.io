@@ -74,7 +74,7 @@ body {
   right: 0%;
 }
 .grain-texture {
-  background-image: url(https://assets-global.website-files.com/60db5e59f76ae577e9f50d42/60e488bfc45685c61a395120_Grain.png);
+  background-image: url(grain.png);
   flex: none;
   position: absolute;
   top: 0%;
