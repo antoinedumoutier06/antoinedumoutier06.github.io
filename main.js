@@ -3,7 +3,7 @@ var cursor = document.querySelector('.cursor'),
     mouseX = 0,
     mouseY = 0
 
-gsap.to({}, 0.016, {
+gsap.to({}, 0.0016, {
     repeat: -1,
 
     onRepeat: function () {
@@ -34,3 +34,18 @@ cursorScale.forEach(link => {
         }
     });
 });
+function toggleTheme() {
+    const body = document.body;
+    const btn = document.querySelector('.btn');
+    const image = document.querySelector('.image4');
+    
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+        btn.textContent = 'DAY';
+        image.src = 'aai.png';
+    } else {
+        btn.textContent = 'NIGHT';
+        image.src = 'aah.png';
+    }
+}
