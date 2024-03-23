@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/bbw5jbu.css">
-    <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.typekit.net/bbw5jbu.css">
+        <link rel="stylesheet" href="main.css">
     <title>Portfolio - Antoine</title>
 </head>
 <body>
@@ -13,15 +13,15 @@
             <i class='bx bx-menu sidebarOpen'></i>
             <span class="logo navLogo font1"><a href="#">AD</a></span>
             <ul class="nav-links">
-                <li><a class="font2" href="#">Accueil</a></li>
-                <li><a class="font2" href="#">Mes projets</a></li>
-                <li><button type="button" onclick="toggleTheme()" class="btn">NIGHT</button></li>
-                <li><a href="#"></a></li>
+                <li><a class="font2" href="" id="accueilLink">Accueil</a></li>
+                <li><a class="font3" href="">Mes projets</a></li>
+                <li><a type="button" onclick="toggleTheme()" class="btn">🌙</a></li>
+            </ul>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
+    <div>
         <div class="cursor"></div>
         <section class="hero-text">
             <div class="hero-text-content">
@@ -29,18 +29,38 @@
                 <h2 class="cursor-scale">Antoine Dumoutier</h2>
             </div>
         </section>
-        <img class="image4" src='aah.png'>
-        <div class="hero-text1">
+        <img class="image4" src='img/liner_white.png'>
+
+    <div class="container5">
+        <div class="hero-text1" id="projects">
             <h1>Mes projets</h1>
         </div>
-    </div>
-    <section>
-        <div class="grain">
-            <div class="grain-texture">
-                <div class="page-transition" style="display: none; opacity: 0;"></div>
+            <div class="slide-container">
+                  <div class="custom-slider fade">
+                        <div class="slide-index font2">1 / 3</div>
+                        <img class="slide-img" src="img/project_1.gif">
+                </div>
+                        <div class="custom-slider fade">
+                        <div class="slide-index font2">2 / 3</div>
+                        <img class="slide-img" src="img/project_2.png">
+                </div>
+                        <div class="custom-slider fade">
+                        <div class="slide-index font2">3 / 3</div>
+                        <img class="slide-img" src="img/project_3.png">
+                </div>
+                <div class="hero-text2">
+                    <h2 class="font4">Création de map Minecraft</h2>
+                </div>
+                    <a class="prev hidden-cursor" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next hidden-cursor" onclick="plusSlides(1)">&#10095;</a>
             </div>
-        </div>
-    </section>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+            
+    </div>
+        <footer class="created-by">
+            <p class="font2">Coder avec ❤️ par Antoine Dumoutier </p>
+        </footer>     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
     <script src="main.js"></script>
 </body>
