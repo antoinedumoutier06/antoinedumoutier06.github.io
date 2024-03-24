@@ -96,6 +96,10 @@ body {
 .taille2{
     font-size: 6vw;
 }
+.wrapper {
+    left: 10%;
+    display: grid;
+  }
 /* Curseur */
 .cursor {
     position: fixed;
