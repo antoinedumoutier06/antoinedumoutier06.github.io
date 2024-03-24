@@ -104,19 +104,19 @@ body {
     margin-left: -20px;
     margin-top: -20px;
     border-radius: 50%;
-    border: 2px solid #16a085;
+    border: 2px solid #0b2fc0;
     transition: transform 0.3s ease;
     transform-origin: center center;
     pointer-events: none;
     z-index: 1000;
+    
 }
-
-.grow-small {
-    transform: scale(10);
-    background: #fff;
-    mix-blend-mode: difference;
+.grow, .grow-small{
     border: none;
-}
+    transform: scale(10);
+    background: #f1efed;;
+    mix-blend-mode: difference; 
+  }
 
 /* Les fleurs */
 img {
@@ -259,6 +259,7 @@ nav .nav-bar .logo a {
             top: 0;
         }
         .slide-img{ 
+            height: auto;
             width: 100%; 
             height: 500px;
             object-fit: cover;
@@ -283,9 +284,16 @@ nav .nav-bar .logo a {
         from {opacity: 0} 
         to {opacity: 1}
         }
-/* Deuxième slider */
-
-
+.slide-text {
+    font-size: 1vw;
+    text-align: right;
+    left: 10%;
+    line-height: 1;
+    font-weight: 700;
+    background-color: #fff;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 /* End Part */
 .created-by {
     position: absolute;
