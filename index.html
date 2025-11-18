@@ -1,44 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work in progress</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f3f5f7; 
-      font-family: Arial, Helvetica, sans-serif;
-      color: #2f4363;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-
-    header {
-      position: absolute;
-      top: 20px;
-      text-align: center;
-      font-weight: bold;
-      font-size: 18px;
-    }
-
-    main {
-      text-align: center;
-      font-size: 48px;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Antoine Dumoutier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    Antoine<br>Dumoutier
-  </header>
-  <main>
-    Work in progress
-  </main>
+    <header>
+        <article class="container">
+            <nav>
+                <div class="logo">Antoine Dumoutier</div>
+                <ul class="nav-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#veille">Veille technologique</a></li>
+                    <li><a href="#">Entreprises</a></li>
+                    <li><a href="#">Tableau de synthèse</a></li>
+                    <li><a href="#contact">Contactez-moi</a></li>
+                </ul>
+            </nav>
+        </article>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Antoine Dumoutier</h1>
+                <p>Étudiant en BTS SIO option SLAM</p>
+                <a href="#apropos" class="btn">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos">
+        <div class="container">
+            <div class="section-title">
+                <h2>À propos</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Qui suis-je ?</h3>
+                    <p>Je suis Antoine Dumoutier, étudiant en BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions Logicielles et Applications Métiers). Passionné par le développement web et mobile, j'aime créer des solutions innovantes et résoudre des problèmes complexes.</p>
+                    <p>Actuellement en formation, je développe mes compétences en programmation, conception d'applications et gestion de projets informatiques. Je suis à la recherche d'une alternance pour approfondir mes connaissances et mettre en pratique mes compétences.</p>
+                    <div>
+                        <a href="Antoine_Dumoutier_Cv.pdf" target="_blank" class="btn" id="center-div">Mon CV</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://i.ibb.co/p6Z7rjNm/Sans-titre-1.png" alt="Photo de profil d'Antoine Dumoutier">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Veille technologique -->
+    <section id="veille">
+        <div class="container">
+            <div class="section-title">
+                <h2>Veille technologique</h2>
+            </div>
+            <div class="veille-container">
+                <div class="veille-card">
+                    <div class="veille-image">
+                        <img src="https://www.shutterstock.com/image-vector/framework-blue-vector-draft-text-260nw-2341072907.jpg" alt="ceci est une image">
+                    </div>
+                    <div class="veille-content">
+                        <h3>Les FramesWorks</h3>
+                        <p>Ceci est un texte</p>
+                        <div class="veille-date"> dernière mise a jour 18 novembre 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contactez-moi</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>56 avenue de la république, 06300, Nice.</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+33 7 82 77 41 17</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>antoine.dumoutier6@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>©2025 Antoine Dumoutier. Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>
