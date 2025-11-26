@@ -157,6 +157,7 @@ nav {
 
 .about-text, .about-image {
     flex: 1;
+    font-size: 1.2em;
 }
 
 .about-image {
