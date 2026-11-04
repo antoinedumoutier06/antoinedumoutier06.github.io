@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="fr"><head>
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Antoine Dumoutier</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS12BPZ7RL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-FS12BPZ7RL');
-</script>
+    </script>
 </head>
 <body>
     <header>
@@ -23,7 +22,7 @@
                 <button class="burger-menu" id="burger-menu" aria-label="Ouvrir le menu">
                     <i class="fas fa-bars"></i>
                 </button>
-                <ul class="nav-links">
+                <ul class="nav-links" id="nav-links">
                     <li><a href="#apropos">À propos</a></li>
                     <li><a href="#veille">Veille technologique</a></li>
                     <li><a href="#">Entreprises</a></li>
@@ -34,7 +33,6 @@
         </article>
     </header>
 
-    <!-- Section À propos (désormais en haut) -->
     <section id="apropos">
         <div class="container">
             <div class="section-title">
@@ -54,7 +52,6 @@
         </div>
     </section>
 
-    <!-- Section Veille technologique -->
     <section id="veille">
         <div class="container">
             <div class="section-title">
@@ -65,17 +62,16 @@
                     <div class="veille-image">
                         <img src="https://www.shutterstock.com/image-vector/framework-blue-vector-draft-text-260nw-2341072907.jpg" alt="ceci est une image">
                     </div>
-                <div class="veille-content">
-                    <h3>Les FramesWorks</h3>
-                    <p>Ceci est un texte</p>
-                <div class="veille-date">dernière mise à jour 18 novembre 2025</div>
+                    <div class="veille-content">
+                        <h3>Les FramesWorks</h3>
+                        <p>Ceci est un texte</p>
+                        <div class="veille-date">dernière mise à jour 18 novembre 2025</div>
+                    </div>
                 </div>
-            </div>
             </a>
         </div>
     </section>
 
-    <!-- Section Contact -->
     <section id="contact">
         <div class="container">
             <div class="section-title">
@@ -106,7 +102,8 @@
                     </div>
                 </div>
             </div>
-    </div></section>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
@@ -116,7 +113,8 @@
             <p>©2025 Antoine Dumoutier. Tous droits réservés.</p>
         </div>
     </footer>
-<script>
+
+    <script>
         const burgerMenu = document.getElementById('burger-menu');
         const navLinks = document.getElementById('nav-links');
 
