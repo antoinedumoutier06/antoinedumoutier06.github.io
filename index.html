@@ -116,18 +116,17 @@
             <p>©2025 Antoine Dumoutier. Tous droits réservés.</p>
         </div>
     </footer>
-    <script>
+<script>
         const burgerMenu = document.getElementById('burger-menu');
         const navLinks = document.getElementById('nav-links');
-        
+
         burgerMenu.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-                
             const icon = burgerMenu.querySelector('i');
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-xmark');
         });
-        
+
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -137,6 +136,5 @@
             });
         });
     </script>
-
 </body>
 </html>
